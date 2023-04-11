@@ -11,7 +11,7 @@ export class ClueStack extends cdk.Stack {
       description: "testing out lambdas w/ cdk",
       runtime: Runtime.NODEJS_18_X,
       code: Code.fromAsset("lambda"),
-      handler: "hello.handler",
+      handler: "game-controller.handler",
     });
   }
 }
