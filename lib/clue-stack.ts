@@ -14,14 +14,8 @@ export class ClueStack extends cdk.Stack {
       },
       // 👇 enable CORS
       defaultCorsPreflightOptions: {
-        allowHeaders: [
-          "Content-Type",
-          "X-Amz-Date",
-          "Authorization",
-          "X-Api-Key",
-        ],
-        allowMethods: ["OPTIONS", "GET", "POST", "PUT", "PATCH", "DELETE"],
-        allowCredentials: true,
+        allowHeaders: ["Content-Type", "User-Agent"],
+        allowMethods: ["GET"],
         allowOrigins: ["*"],
       },
     });
