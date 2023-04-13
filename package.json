@@ -5,7 +5,7 @@
     "clue": "bin/clue.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp ./game-logic/game-logic.js ./lambda",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
